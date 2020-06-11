@@ -14,8 +14,8 @@ After setting your working directory etc. you can read in geodata. In this examp
 
     shape <- st_read(dsn = "shape.shp")
     
-When reading in the shapefiles, the console output will show if your shapefile has a set crs or if it is not defined yet.
-In case it is not defined, set **set the crs to the coordinate system that your data actual has.** You can see that by looking at the format of your geometry attribute of the shape. For WGS84 coordinates this would look like this:
+When reading in the shapefile, the console output will show if your shapefile has a set crs or if it is not defined yet.
+In case it is not defined, **set the crs to the coordinate system that your data actual has.** You can see that by looking at the format of your geometry attribute of the shape. For WGS84 coordinates this would look like this:
 
     st_crs(shape) <- 4326 #4326 is the ESPG code of WGS84
     
