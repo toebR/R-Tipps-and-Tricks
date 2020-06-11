@@ -3,6 +3,7 @@
 Hi there, 
 
 this is a very short introduction on how to gather a basemap for your geodata without being dependent on a google API.
+I'm pretty sure that there is a similar instruction somewhere to be found in a blogpost but I did not find it anymore. So I decided to post a simple tutorial on the solution that worked for me.
 
 First load (and perhaps install) the necessary libraries.
 
@@ -24,7 +25,7 @@ If the crs of your shape is not in WGS84, you can set it by transforming the crs
     shape <- st_transform(shape, 4326)
     
 Now we have our shape in the crs we want.
-\n
+
 To create a bbox (extent) for our basemap, we can extract the coordinates from the shape the following way:
 
     coords <- data.frame(st_coordinates(shape)
