@@ -10,7 +10,7 @@ This is how I do it:<br/>Load libraries and set working directory to where your 
     library(readxl)
     library(tidyverse)
     
-    setwd("your working dir)
+    setwd("your working dir")
     
 List all xlsx files in the dir you have stored your same-structured xlsx datasheets:
 
